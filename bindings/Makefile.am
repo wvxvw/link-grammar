@@ -35,10 +35,13 @@ SUBDIRS += python-examples
 endif HAVE_PYTHON3
 endif !HAVE_PYTHON2
 
+if HAVE_LISP
+SUBDIRS += lisp
+endif
+
 EXTRA_DIST =                              \
    README                                 \
    autoit/_LGTest.au3                     \
    autoit/_LinkGrammar.au3                \
    autoit/README                          \
-   lisp/link-interface.cl                 \
    swig/link_grammar.i

@@ -360,3 +360,11 @@ void delete_lg_errinfo(lg_errinfo *lge) {
 }
 %}
 #endif /* SWIGPYTHON */
+
+#ifdef SWIGCFFI
+typedef unsigned int size_t;
+
+%insert("lisphead") %{
+(in-package :link-grammar)
+%}
+#endif /* SWIGCFFI */

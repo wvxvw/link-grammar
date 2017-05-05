@@ -877,6 +877,11 @@ if test x$enable_python_bindings != xno; then
 fi
 
 # ====================================================================
+# check for Common Lisp
+# TODO: Find a way to test for Common Lisp
+AM_CONDITIONAL(HAVE_LISP, true)
+
+# ====================================================================
 # check compiler flags
 
 AC_DEFUN([LINK_CC_TRY_FLAG], [

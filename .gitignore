@@ -45,3 +45,5 @@ svn-commit.tmp*
 *.la
 *.lo
 *.o
+*~
+bindings/lisp/src/wrapper.lisp
